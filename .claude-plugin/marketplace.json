@@ -4,21 +4,32 @@
     "name": "MetamoL"
   },
   "metadata": {
-    "description": "MetamoL が実際に使っている Claude Code 用スキル",
-    "version": "1.0.0"
+    "description": "MetamoL が実際に使っている Claude Code 用スキル"
   },
   "plugins": [
     {
-      "name": "metamol-skills",
-      "description": "verified-research（引用を原文と機械照合する Web 調査）、roast-me（実話ロースト）、japanese-writing-gemini（Gemini への執筆依頼文）、fiction-prose-jp（AIの小説の癖を避けて書き、点検する）",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/verified-research",
-        "./skills/roast-me",
-        "./skills/japanese-writing-gemini",
-        "./skills/fiction-prose-jp"
-      ]
+      "name": "verified-research",
+      "description": "引用を原文と機械照合する Web 調査",
+      "source": { "source": "github", "repo": "MetamoL/verified-research" }
+    },
+    {
+      "name": "roast-me",
+      "description": "会話や作業記録の実話だけで本人をローストする",
+      "source": { "source": "github", "repo": "MetamoL/roast-me" }
+    },
+    {
+      "name": "japanese-writing-gemini",
+      "description": "日本語の執筆を Gemini に任せるための自己完結した依頼文を作る",
+      "source": { "source": "github", "repo": "MetamoL/japanese-writing-gemini" }
+    },
+    {
+      "name": "japanese-novel-skill",
+      "description": "AI の日本語小説の癖を避けて書き、書いた後に点検する（旧 fiction-prose-jp）",
+      "source": { "source": "github", "repo": "MetamoL/japanese-novel-skill" }
     }
-  ]
+  ],
+  "renames": {
+    "metamol-skills": null
+  },
+  "forceRemoveDeletedPlugins": true
 }

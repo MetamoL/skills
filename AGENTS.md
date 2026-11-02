@@ -1,5 +1,7 @@
 # skills
 
-MetamoL が公開しているスキルの正本。`skills/<名前>/` が配布内容、`.claude-plugin/marketplace.json` が Claude Code のプラグイン登録、README が利用者向けの説明。aiwork の `claude-kit/install.ps1` がここから `~/.claude/skills/` へ配る。
+MetamoL が公開しているスキルの一覧と導入口。スキル本体は持たない。各スキルは `MetamoL/<名前>` の単独repoが正本で、SKILL.md をrepo直下に置く（README・LICENSE も各repoに置く）。aiwork では `ai-tools/<名前>/` に clone してあり、aiwork の `claude-kit/install.ps1` がそこから `~/.claude/skills/` へ配る。
 
-スキルを足す・消すときは `skills/`、`marketplace.json` の `skills`、README の一覧に加えて、LP（aiwork の `me-lp/site/index.html` のスキル欄）もそろえる。公開repoなので、個人の環境・未公開の仕事・認証に触れる記述を入れない。mainへのpushはそのまま公開になる。
+このrepoにあるのは README（一覧・導入・引退したスキル）、`.claude-plugin/marketplace.json`（各repoを `github` ソースで指す。1スキル＝1プラグイン、プラグイン名＝スキル名）、LICENSE だけ。
+
+スキルを足す・消す・改名するときは、単独repo、`marketplace.json` の `plugins`（消した・改名した名前は `renames` に追記し、古い行は消さない）、README の一覧、aiwork の `claude-kit/install.ps1` の一覧、LP（aiwork の `me-lp/site/index.html` のスキル欄）をそろえる。新しいrepoには検索で見つかるよう description と topics を付ける。公開repoなので、個人の環境・未公開の仕事・認証に触れる記述を入れない。mainへのpushはそのまま公開になる。
