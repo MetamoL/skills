@@ -10,11 +10,11 @@
   "plugins": [
     {
       "name": "metamol-skills",
-      "description": "research（引用を原文と機械照合する Web 調査）と roast-me（実話ロースト）",
+      "description": "verified-research（引用を原文と機械照合する Web 調査）と roast-me（実話ロースト）",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/research",
+        "./skills/verified-research",
         "./skills/roast-me"
       ]
     }

@@ -4,7 +4,7 @@ MetamoL が普段の作業で実際に使っている、Claude Code 用のスキ
 
 | スキル | 何をするか |
 |---|---|
-| [research](skills/research/) | Web 調査の答えに、原文どおりの引用つきの出典を付けさせる。引用がページに本当に載っているかをスクリプトで照合し、別のエージェントに読み直させる。検索の仕方はモデルに任せる |
+| [verified-research](skills/verified-research/) | Web 調査の答えのすべての主張に、原文どおりの引用つきの出典を付けさせる。引用がページに本当に載っているかをスクリプトで照合し、判断が絡むときは別のエージェントに読み直させる。検索の仕方はモデルに任せる。30問での評価結果は [eval](skills/verified-research/eval/) |
 | [roast-me](skills/roast-me/) | 会話や作業記録の実話だけを材料に、本人が笑えるローストを書く。公開用に、未公開の情報を抜いた版も作れる |
 
 ## 導入
@@ -16,7 +16,7 @@ Claude Code で次の2行を実行します。
 /plugin install metamol-skills@metamol
 ```
 
-1本だけ使いたいときは、`skills/<名前>/` のフォルダを `~/.claude/skills/<名前>/` へコピーしてください。research は Python 3 を使います（標準ライブラリだけで動きます）。
+1本だけ使いたいときは、`skills/<名前>/` のフォルダを `~/.claude/skills/<名前>/` へコピーしてください。verified-research は Python 3 を使います。PDF を照合するときは `pip install pdfminer.six`、JavaScript で表示するページは `pip install playwright && playwright install chromium` を追加で入れます（必要になったときにスクリプトが案内します）。
 
 ## あわせて使っているスキル
 
