@@ -1,0 +1,7 @@
+interface:
+  display_name: "Japanese Writing Gemini"
+  short_description: "Geminiへ新規執筆・大幅改稿を頼む自己完結ブリーフを作成"
+  default_prompt: "$japanese-writing-gemini この日本語文章をGeminiへ依頼するための自己完結したブリーフを作ってください。"
+
+policy:
+  allow_implicit_invocation: true
