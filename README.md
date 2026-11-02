@@ -9,7 +9,9 @@ Agent skills for Claude Code, Codex, and other agents that read `SKILL.md`. Each
 | [verified-research](https://github.com/MetamoL/verified-research) | Web 調査の答えのすべての主張に、原文どおりの引用つきの出典を付けさせる。引用がページに本当に載っているかをスクリプトで照合し、判断が絡むときは別のエージェントに読み直させる。検索の仕方はモデルに任せる。30問での評価結果は [eval](https://github.com/MetamoL/verified-research/tree/main/eval) |
 | [roast-me](https://github.com/MetamoL/roast-me) | 「知っていることを全部使って、容赦なくローストして」に応える。会話や作業記録の実話だけを材料に、頼んだ人の言語で、本人が笑えるローストを書く。公開用に、未公開の情報を抜いた版も作れる |
 | [japanese-writing-gemini](https://github.com/MetamoL/japanese-writing-gemini) | 小説や README などの日本語の執筆・大幅改稿を Gemini に任せるとき、Gemini がそれだけで書ける依頼文を作る |
-| [japanese-novel-skill](https://github.com/MetamoL/japanese-novel-skill) | AI に日本語の小説を書かせるとき、一発で出る本文の質を上げる。連載で AI の稿を直して見つかった癖（オウム返し、重ねた比喩、目の光で語る感情、細切れの段落、足された設定など）を避けて書かせ、書いた後に点検表と付属スクリプトで自分の稿を点検させる。同じ筋で書き比べると、「た」の三連続 8→0、一文段落の連続 4→0、台詞の「……」 5→0、文あたりの読点 0.60→0.53 |
+| [japanese-novel-skill](https://github.com/MetamoL/japanese-novel-skill) | AI に日本語の小説を書かせるとき、AI 小説にありがちな癖（主題を語り手が言う、「悟って受け入れて終わる」結末、決まった体の合図で書く感情、全員同じ声の台詞、気取った比喩、頼んでいない設定の追加など）を避けて書かせ、書いた後に「整合・人物と読者・文」の三回に分けて点検させる。日中英の人気の小説スキルが共通して挙げる癖を、日本語の小説向けに作り直したもの |
+| [japanese-novel-plot-skill](https://github.com/MetamoL/japanese-novel-plot-skill) | 日本語の小説・Web小説を書かせる前に、一話の筋と場面を設計させる。場面ごとの役割と変化、転回の出どころ、人物ごとの知識と誤解、読者がこの話で得る満足を決める |
+| [japanese-novel-continuity-skill](https://github.com/MetamoL/japanese-novel-continuity-skill) | 日本語の長編・Web小説の連載で、人物の持ち物・関係・知識、伏線、能力や資源の制約を台帳で保たせる。作者が確定した話からだけ更新し、AI が足した事実は作者の確認を待つ |
 
 ## 導入
 
@@ -24,7 +26,7 @@ Agent skills for Claude Code, Codex, and other agents that read `SKILL.md`. Each
 
 **Codex・そのほかのエージェント**：`npx skills add MetamoL/<スキル名>` で入ります（入れるエージェントを選べます。どのプロジェクトでも使うときは `-g` を付けます）。
 
-**手で置く**ときは、各リポジトリをエージェントのスキルフォルダへ clone してください（Claude Code は `~/.claude/skills/<スキル名>/`、Codex は `~/.agents/skills/<スキル名>/`）。verified-research と japanese-novel-skill の点検スクリプトは Python 3 を使います。PDF を照合するときは `pip install pdfminer.six`、JavaScript で表示するページは `pip install playwright && playwright install chromium` を追加で入れます（必要になったときにスクリプトが案内します）。
+**手で置く**ときは、各リポジトリをエージェントのスキルフォルダへ clone してください（Claude Code は `~/.claude/skills/<スキル名>/`、Codex は `~/.agents/skills/<スキル名>/`）。verified-research と japanese-novel-skill のスクリプトは Python 3 を使います。PDF を照合するときは `pip install pdfminer.six`、JavaScript で表示するページは `pip install playwright && playwright install chromium` を追加で入れます（必要になったときにスクリプトが案内します）。
 
 ## あわせて使っているスキル
 

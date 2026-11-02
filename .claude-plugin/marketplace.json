@@ -10,22 +10,50 @@
     {
       "name": "verified-research",
       "description": "引用を原文と機械照合する Web 調査",
-      "source": { "source": "github", "repo": "MetamoL/verified-research" }
+      "source": {
+        "source": "github",
+        "repo": "MetamoL/verified-research"
+      }
     },
     {
       "name": "roast-me",
       "description": "会話や作業記録の実話だけで本人をローストする",
-      "source": { "source": "github", "repo": "MetamoL/roast-me" }
+      "source": {
+        "source": "github",
+        "repo": "MetamoL/roast-me"
+      }
     },
     {
       "name": "japanese-writing-gemini",
       "description": "日本語の執筆を Gemini に任せるための自己完結した依頼文を作る",
-      "source": { "source": "github", "repo": "MetamoL/japanese-writing-gemini" }
+      "source": {
+        "source": "github",
+        "repo": "MetamoL/japanese-writing-gemini"
+      }
     },
     {
       "name": "japanese-novel-skill",
       "description": "AI の日本語小説の癖を避けて書き、書いた後に点検する（旧 fiction-prose-jp）",
-      "source": { "source": "github", "repo": "MetamoL/japanese-novel-skill" }
+      "source": {
+        "source": "github",
+        "repo": "MetamoL/japanese-novel-skill"
+      }
+    },
+    {
+      "name": "japanese-novel-plot-skill",
+      "description": "日本語の小説・Web小説を書く前に、筋と場面を設計する",
+      "source": {
+        "source": "github",
+        "repo": "MetamoL/japanese-novel-plot-skill"
+      }
+    },
+    {
+      "name": "japanese-novel-continuity-skill",
+      "description": "日本語の連載小説のつじつまを台帳で保つ",
+      "source": {
+        "source": "github",
+        "repo": "MetamoL/japanese-novel-continuity-skill"
+      }
     }
   ],
   "renames": {
