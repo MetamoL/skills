@@ -4,7 +4,7 @@
     "name": "MetamoL"
   },
   "metadata": {
-    "description": "MetamoL が実際に使っている Claude Code 用スキル"
+    "description": "MetamoL が実際に使っている AI エージェント用スキル"
   },
   "plugins": [
     {
