@@ -15,7 +15,8 @@
       "strict": false,
       "skills": [
         "./skills/verified-research",
-        "./skills/roast-me"
+        "./skills/roast-me",
+        "./skills/japanese-writing-gemini"
       ]
     }
   ]
