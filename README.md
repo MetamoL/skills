@@ -28,6 +28,23 @@ Claude Code で次の2行を実行します。
 
 いずれも Matt Pocock さんの [mattpocock/skills](https://github.com/mattpocock/skills) にあります。
 
+## 引退したスキル
+
+以前は別のリポジトリで公開していたスキルです。今は使っていないので一覧から外しましたが、最終版をこのリポジトリの履歴（コミット `4497714`）に残しています。
+
+| スキル | 何をしていたか |
+|---|---|
+| ai-writing-skills-jp | 技術文書や記事の「AIくささ」を減らし、読みやすい日本語に整える |
+| fiction-prose-jp | 小説本文のリズムと、持ち物・時刻・人物の知識のつじつまを整える |
+| japanese-writing-gemini | README や記事の日本語執筆を Gemini に任せるためのブリーフを作る |
+| loop-engineering-jp | AI の実装と検証を分け、停止条件つきで改善を繰り返す |
+
+復活させるときは、このリポジトリで次を実行すると `retired/<名前>/` に元のリポジトリの中身が戻ります。
+
+```
+git checkout 4497714 -- retired/<名前>
+```
+
 ## ライセンス
 
 [LICENSE](LICENSE) のとおりです。自分の環境で使うこと・改変すること・作ったものの利用は自由です。再配布と転載はできません。
