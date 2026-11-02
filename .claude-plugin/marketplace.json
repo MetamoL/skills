@@ -10,13 +10,14 @@
   "plugins": [
     {
       "name": "metamol-skills",
-      "description": "verified-research（引用を原文と機械照合する Web 調査）と roast-me（実話ロースト）",
+      "description": "verified-research（引用を原文と機械照合する Web 調査）、roast-me（実話ロースト）、japanese-writing-gemini（Gemini への執筆依頼文）、fiction-prose-jp（AIの小説の癖を避けて書き、点検する）",
       "source": "./",
       "strict": false,
       "skills": [
         "./skills/verified-research",
         "./skills/roast-me",
-        "./skills/japanese-writing-gemini"
+        "./skills/japanese-writing-gemini",
+        "./skills/fiction-prose-jp"
       ]
     }
   ]
