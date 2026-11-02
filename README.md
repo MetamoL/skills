@@ -18,7 +18,7 @@ Claude Code でこのリポジトリをマーケットプレイスとして追�
 /plugin install japanese-novel-skill@metamol
 ```
 
-ほかのスキルも `/plugin install <スキル名>@metamol` で入ります。以前の一括プラグイン `metamol-skills` は廃止しました。入れていた場合は、マーケットプレイスを更新すると外れるので、使うスキルを入れ直してください。
+ほかのスキルも `/plugin install <スキル名>@metamol` で入ります。GitHub の SSH 鍵を設定していない PC で取得に失敗するときは、環境変数 `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` を設定してから Claude Code を起動し直してください。以前の一括プラグイン `metamol-skills` は廃止しました。入れていた場合は、マーケットプレイスを更新すると外れるので、使うスキルを入れ直してください。
 
 プラグインを使わないときは、各リポジトリを `~/.claude/skills/<スキル名>/` へ clone してください（例：`git clone https://github.com/MetamoL/japanese-novel-skill ~/.claude/skills/japanese-novel-skill`）。verified-research と japanese-novel-skill の点検スクリプトは Python 3 を使います。PDF を照合するときは `pip install pdfminer.six`、JavaScript で表示するページは `pip install playwright && playwright install chromium` を追加で入れます（必要になったときにスクリプトが案内します）。
 
