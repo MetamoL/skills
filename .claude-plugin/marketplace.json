@@ -1,0 +1,22 @@
+{
+  "name": "metamol",
+  "owner": {
+    "name": "MetamoL"
+  },
+  "metadata": {
+    "description": "MetamoL が実際に使っている Claude Code 用スキル",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "metamol-skills",
+      "description": "research（引用を原文と機械照合する Web 調査）と roast-me（実話ロースト）",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/research",
+        "./skills/roast-me"
+      ]
+    }
+  ]
+}
