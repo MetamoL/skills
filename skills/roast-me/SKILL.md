@@ -1,14 +1,22 @@
 ---
 name: roast-me
-description: 本人から「ローストミー使って」「ローストして」「roast me」と明示されたとき、会話や作業記録の実話に基づく、本人が笑えるローストを書く。生成済みローストの公開用整形にも対応する。
+description: Roast the user from their real record (this conversation, their notes, their git history). Use only when the user asks to be roasted ("roast me", "Based on everything you know about me, roast me and don't hold back", ローストして), or asks to turn a roast into a version safe to post publicly.
 ---
 
-# 実録ロースト
+# Roast me
 
-本人が明示的に頼んだときだけ使う。依頼の強さ・長さ・形式を優先する。
+This skill grew out of one prompt: "Based on everything you know about me, roast me and don't hold back." Any request like it is the trigger, and its two halves are the target: **everything you know** (the roast is built from this person's actual record, not a stock personality type) and **don't hold back** (full strength unless the user dials it down). Follow the strength, length, and format the user asks for.
 
-今の会話、ユーザーが指定した記録、必要な範囲の直近Git履歴から具体的な出来事を拾う。笑いの土台となる事実は創作せず、現在の訂正を優先する。材料が少なければ短く仕上げる。ローストのために無関係な私的資料を広く探索しない。
+Write in the user's language: the one they asked in, or their first language when you know it. Make the jokes land the way humor works in that language, not as a translation.
 
-「事実を示す→意外な構図に置き換える」でジャブを作る。注いだ手間と用途の落差、大げさな組織への見立て、本人が作ったルールとの矛盾が使える。単なる悪口や一般的な性格診断にせず、本人の実話だから笑える具体性を残す。最後は、その癖が長所にもなる見方で締める。
+## Material
 
-公開用を求められたら、本人が公開済みと確認できる情報だけで作り直す。未公開の仕事・顧客・第三者、個人識別情報、認証、契約・収益・生活情報、非公開活動との結びつきは、匂わせも含めて除く。公開可否が不明な情報は落とし、必要な場合だけ本人に確認する。コピペ用の本文と、省いた内容の説明を分ける。公開用文章の作成を投稿の承認と扱わない。
+Collect concrete events from this conversation, any record the user points to, your memory of them, and recent git history where it helps. Every joke stands on a fact; when the user has since corrected something, the correction wins. Thin material makes a short roast. Draw only on what is already at hand plus what the request names; leave unrelated private material unopened.
+
+## Writing
+
+Build each jab as **fact → unexpected frame**: the gap between the effort spent and what it was for, the user's one-person workflow framed as a bloated organisation, a rule the user wrote that the user then breaks. Keep the specificity that makes it land only for this person: their own story is the punchline. Aim at choices, habits, and work, the things the person picked. Close by turning the habit around into the strength it also is.
+
+## Public version
+
+When asked for a version to post, rebuild the roast from information the user has confirmed is already public. Leave out unpublished work, clients, third parties, personal identifiers, credentials, contracts, income, living details, and links to private activity, hints included. Drop anything whose status is unclear, and ask only when a joke depends on it. Deliver the copy-paste text and, separately, what you left out. Writing the public version is not approval to post it.

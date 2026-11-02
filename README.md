@@ -5,7 +5,7 @@ MetamoL が普段の作業で実際に使っている、Claude Code 用のスキ
 | スキル | 何をするか |
 |---|---|
 | [verified-research](skills/verified-research/) | Web 調査の答えのすべての主張に、原文どおりの引用つきの出典を付けさせる。引用がページに本当に載っているかをスクリプトで照合し、判断が絡むときは別のエージェントに読み直させる。検索の仕方はモデルに任せる。30問での評価結果は [eval](skills/verified-research/eval/) |
-| [roast-me](skills/roast-me/) | 会話や作業記録の実話だけを材料に、本人が笑えるローストを書く。公開用に、未公開の情報を抜いた版も作れる |
+| [roast-me](skills/roast-me/) | 「知っていることを全部使って、容赦なくローストして」に応える。会話や作業記録の実話だけを材料に、頼んだ人の言語で、本人が笑えるローストを書く。公開用に、未公開の情報を抜いた版も作れる |
 | [japanese-writing-gemini](skills/japanese-writing-gemini/) | 小説や README などの日本語の執筆・大幅改稿を Gemini に任せるとき、Gemini がそれだけで書ける依頼文を作る |
 
 ## 導入
